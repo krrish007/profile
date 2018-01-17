@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.display-inline{
+    display:inline;
+}
+
+.float-left{
+    float:left;
+}
+
+.light-gray{
+    background-color: #e1e1e1;
+}
+
+.pad-top-10{
+    padding-top:10px;
+}
+
+.inline-block{
+    display: inline-block;
+}

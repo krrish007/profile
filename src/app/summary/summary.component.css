@@ -1,0 +1,22 @@
+.profile-container{
+    padding-top:120px;
+}
+
+.pro-cont{
+    height:170px;
+    width:180px;
+    display:block;    
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.pro-img{
+    height: 117px;
+    background-color: #d2d2d2;
+}
+
+hr {
+    margin:0;
+    background-color: #000;
+    height: 1px;
+}

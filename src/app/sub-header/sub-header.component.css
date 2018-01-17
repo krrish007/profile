@@ -1,0 +1,21 @@
+.sub-header{
+    height: 50px;
+    background-color: deepskyblue;
+    text-align: center;
+    position: fixed;
+    top:50px;
+    width:100%;
+    z-index:100;
+}
+
+.action-tab{
+    height: 20px;
+    width: 220px;
+    margin: auto;
+}
+.action-btn{
+    width: 100px;
+    background-color: beige;
+    margin-top: 15px;
+    display: inline-block;
+}

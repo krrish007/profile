@@ -1,0 +1,12 @@
+.details-container{
+    padding-top: 120px;
+}
+
+.profile-pic{
+    height:117px;
+    width:170px;
+}
+.summary-head{
+    font-weight: 700;
+    text-decoration: underline;
+}

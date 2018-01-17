@@ -1,0 +1,23 @@
+.main-header{
+    height: 50px;
+    background-color: #000;
+    color: #fff;  
+    padding: 10px 30px 0 30px;  
+    position:fixed;
+    width:100%;
+    z-index:100;
+}
+
+.search{
+    float:right;
+}
+
+.seach-box{
+    padding-left:30px;
+}
+
+.search-img{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 5px;
+}
