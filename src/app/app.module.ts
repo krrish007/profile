@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { SummaryComponent } from './summary/summary.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SubHeaderComponent } from './sub-header/sub-header.component';
     HoverDirectiveDirective,
     SummaryComponent,
     MainHeaderComponent,
-    SubHeaderComponent
+    SubHeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

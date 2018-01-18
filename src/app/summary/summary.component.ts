@@ -8,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class SummaryComponent implements OnInit {
 
   profileArr = [1, 2, 3, 4, 5, 6, 7];
-
-  constructor() { console.log('In summary'); }
+  user;
+  constructor() { this.getUserData();console.log('In summary'); }
 
   ngOnInit() {
   }
 
+  getUserData() {
+    this.user = {
+      data: [
+      
+      ]
+    }    
+  }
+
+  
 }
