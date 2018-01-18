@@ -10,7 +10,6 @@
 
 .action-tab{
     height: 20px;
-    width: 220px;
     margin: auto;
 }
 .action-btn{
@@ -18,4 +17,13 @@
     background-color: beige;
     margin-top: 15px;
     display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 20px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.border-right{
+    border-right: 1px solid #000;
 }

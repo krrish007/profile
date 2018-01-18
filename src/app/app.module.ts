@@ -11,6 +11,8 @@ import { SummaryComponent } from './summary/summary.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     SummaryComponent,
     MainHeaderComponent,
     SubHeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

@@ -5,12 +5,17 @@ import { FeatureComponent } from '../feature/feature.component';
 import { SummaryComponent } from '../summary/summary.component';
 import { Component } from '@angular/core/src/metadata/directives';
 import { DetailsComponent } from '../details/details.component';
+import { HomeComponent } from '../home/home.component';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'summary', pathMatch: 'full' },
   { path: 'feature', loadChildren: '../feature/feature.module#FeatureModule' },
   { path: 'summary', component: SummaryComponent },
-  { path: 'details', component: DetailsComponent }
-]
+  { path: 'details', component: DetailsComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contactus', component: ContactUsComponent }
+];
 
 @NgModule({
   imports: [

@@ -17,7 +17,7 @@ export class SummaryComponent implements OnInit {
   getUserData() {
     this.user = {
       data: [
-      
+       
       ]
     }    
   }
