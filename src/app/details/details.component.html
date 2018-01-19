@@ -1,4 +1,4 @@
-<div class="container-fluid details-container">
+<!--<div class="container-fluid details-container">
   <div class="row">
     <div class="col-sm-2 col-md-2 col-lg-2">
       <p>
@@ -55,4 +55,26 @@
       </p>
     </div>
   </div>
+</div>-->
+
+<div class="container-fluid details-container">
+  <table class="bordered">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Total Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of product; let i = index" class="table-row">
+        <td>{{item.productID}}</td>
+        <td>{{item.productName}}</td>
+        <td>{{item.totalQuantity}}</td>
+        <td>{{item.price}}</td>
+      </tr>
+
+    </tbody>
+  </table>
 </div>

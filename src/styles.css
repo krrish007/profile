@@ -24,3 +24,7 @@
 .display-block{
     display:block;
 }
+
+.inline-flex{
+    display: inline-flex;
+}

@@ -13,6 +13,9 @@ import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ProductService } from '../app/product.service';
+import { ProductComponent } from './product/product.component';
+import { BillingComponent } from './billing/billing.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     SubHeaderComponent,
     FooterComponent,
     HomeComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ProductComponent,
+    BillingComponent
   ],
   imports: [
     BrowserModule,
@@ -32,8 +37,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     RouterModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
-  
+
 })
 export class AppModule { }

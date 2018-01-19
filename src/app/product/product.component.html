@@ -1,0 +1,39 @@
+<div class="container-fluid product-container">
+  <div class="item-container">
+    <div class="item-block">
+      <div class="prod-label">
+        <label>Product ID</label>
+      </div>
+
+      <div>
+        <input type="textbox" [(ngModel)]="product.productID" />
+      </div>
+    </div>
+    <div class="item-block">
+      <div class="prod-label">
+        <label>Product Name</label>
+      </div>
+      <div>
+        <input type="textbox" [(ngModel)]="product.productName" />
+      </div>
+    </div>
+    <div class="item-block">
+      <div class="prod-label">
+        <label>Product Quantity</label>
+      </div>
+      <div>
+        <input type="textbox" [(ngModel)]="product.totalQuantity" />
+      </div>
+    </div>
+    <div class="item-block">
+      <div class="prod-label">
+        <label>Price/Unit</label>
+      </div>
+      <div>
+        <input type="textbox" [(ngModel)]="product.price" />
+      </div>
+    </div>
+    <input value="Save Product" type="button" (click)="saveProduct(product)" />
+  </div>
+  <input value="get Product" type="button" (click)="getProduct()" />
+</div>

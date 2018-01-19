@@ -1,0 +1,34 @@
+.billing-container{
+    padding-top:120px;
+}
+
+.billing-block{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.item-label{
+    width: 250px;
+    float:left;
+}
+
+.item-block{
+    padding-bottom:15px;
+}
+
+select{
+    width: 178px;
+    height: 25px;
+}
+
+table{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.align-left{
+    text-align: left;
+}

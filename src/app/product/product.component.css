@@ -1,0 +1,16 @@
+.product-container {
+    padding-top: 120px;
+}
+
+.item-container{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+.prod-label{
+    width: 250px;
+    float:left;
+}
+.item-block{
+    padding-bottom: 15px;
+}

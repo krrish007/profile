@@ -1,0 +1,52 @@
+<div class="container-fluid billing-container">
+  <div class="billing-block">
+
+    <div class="item-block">
+      <div class="item-label">
+        <label>Select Item:</label>
+      </div>
+      <div>
+        <select [(ngModel)]="productID" (ngModelChange)="onSelect($event)">
+          <!--<option value="" default selected>Select your option</option>-->
+          <option *ngFor="let product of productIdList" value={{product.productID}}>
+            {{product.productName}}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="item-block">
+      <div class="item-label">
+        <label>Add Quantity:</label>
+      </div>
+      <div>
+        <input type="textbox" [(ngModel)]="quantity" />
+      </div>
+    </div>
+
+    <input type="button" value="Add In List" (click)="addItem(quantity)"/>
+  </div>
+  <div>
+    <table class="bordered">
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price/Unit</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let itm of productList" class="table-row align-left">
+          <td>{{itm.id}}</td>
+          <td>{{itm.name}}</td>
+          <td>{{itm.quantity}}</td>
+          <td>{{itm.price}}</td>
+          <td>{{itm.totalPrice}}</td>
+
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
