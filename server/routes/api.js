@@ -67,4 +67,21 @@ router.delete('/deleteProduct/:id', function (req, res) {
         res.send(user);
     });
 });
+
+router.post("/updateQuantity", function (req, res) {
+    console.log(req.body) 
+    Product.findOne({ productID: req.body.id }, function (error, product) {
+        console.log(product)
+        if (error || !product) {
+            res.send({ error: error });
+        } else {
+            product.totalQuantity = req.body.quantity;
+            product.update({totalQuantity : req.body.quantity}, function (err, product) {
+                if(err) throw err;
+                console.log("saved");
+            });
+        }
+        res.send('updated');
+    });
+});
 module.exports = router;

@@ -59,6 +59,14 @@ export class BillingComponent implements OnInit {
     console.log(this.productList);
   }
 
+  payBill() {
+    var qty=parseInt(this.selectedItem.totalQuantity) - parseInt(this.productList[0].quantity);
+    this.productService.updateQuantity(
+      { id: this.productList[0].id, quantity: qty.toString() }
+
+    ).subscribe(data => { console.log(data) })
+
+  }
 }
 
 

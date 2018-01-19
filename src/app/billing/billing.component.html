@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <input type="button" value="Add In List" (click)="addItem(quantity)"/>
+    <input type="button" value="Add In List" (click)="addItem(quantity)" />
   </div>
   <div>
     <table class="bordered">
@@ -43,10 +43,16 @@
           <td>{{itm.quantity}}</td>
           <td>{{itm.price}}</td>
           <td>{{itm.totalPrice}}</td>
-
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Total:</td>
+          <td></td>
         </tr>
 
       </tbody>
     </table>
   </div>
+  <input value ="pay" type="button" (click)="payBill()"/>
 </div>

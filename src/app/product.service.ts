@@ -15,11 +15,19 @@ export class ProductService {
     return this.http.post(`http://localhost:3000/api/addProduct`, JSON.stringify(product), { headers: headers });
   }
 
-  getProduct(){
-    return this.http.get(`http://localhost:3000/api/getProduct`).map(data=>{return data.json()});
+  getProduct() {
+    return this.http.get(`http://localhost:3000/api/getProduct`).map(data => { return data.json() });
   }
 
-  deleteProduct(){
+  deleteProduct() {
     return this.http.delete(`http://localhost:3000/api/deleteProduct/1001`);
+  }
+
+  updateQuantity(product) {
+    var headers = new Headers({
+      'Content-Type': 'application/json'
+    });
+    return this.http.post(`http://localhost:3000/api/updateQuantity`, JSON.stringify(product), { headers: headers });
+    
   }
 }
